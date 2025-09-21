@@ -1,0 +1,32 @@
+#app {
+    background: $background;
+}
+
+#menu_bar {
+    width: 100%;
+    height: 3;
+    background: black;
+    color: $text;
+    align-horizontal: left;
+    content-align-vertical: top;
+    border: none;
+}
+
+#ascii_art {
+    color: orange;
+    text-align: center;
+}
+
+#add_form_title {
+    padding-bottom: 1;
+}
+
+#add_form {
+    padding: 1 2;
+    border: round $accent;
+    background: $panel;
+}
+
+#main_list {
+    padding: 1 2;
+}
