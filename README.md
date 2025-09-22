@@ -13,13 +13,28 @@ LinkDB is a terminal-based program to save links (Bookmarks) and categorize in t
 - Folder Support
 - Better search/filters
 - Improvements in the main UI.
+- Better documentation
+- More hotkeys support
 
-# build
+# build/run
+1. Clone the repository.
+
+2. Install Dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+
+3. Run LinkDB:
 ```bash
-python -m nuitka --follow-imports main.py
+textual run main.py
+```
+
+---
+
+If you want to compile as standalone binary:
+```bash
+pip install nuitka
+python -m nuitka --onefile main.py
 ```
 
 # reset db

@@ -4,6 +4,9 @@ import os
 DB_PATH = "bookmarks.db"
 
 def init_db():
+    if not os.path.exists(DB_PATH):
+        open(DB_PATH, 'w').close()
+        
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
     c.execute('''
