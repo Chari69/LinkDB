@@ -32,6 +32,8 @@ jobs:
 
   build-windows:
     runs-on: windows-latest
+    env:
+      NUITKA_DOWNLOAD_DEPENDENCY_TOOL: 1
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
